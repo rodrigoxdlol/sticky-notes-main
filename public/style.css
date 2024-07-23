@@ -1,0 +1,130 @@
+*{
+    background-color: #1a1a5e;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.title-page h1{
+    font-weight: bold;
+    color: blue;
+    font-size: 50px;
+}
+
+.input-title {
+    width: 350px;
+
+}
+
+.input-description {
+    width: 370px;
+}
+
+.btn-div button{
+    width: 230px;
+}
+
+.container-entrys{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    
+    gap: 20px;
+}
+
+.div-notes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.paper-note {
+    padding: 15px;
+    background-color: #fffecd;
+    width: 270px;
+    height: 270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease; /* Agregado: transición en todas las propiedades */
+
+}
+  
+  .paper-note h3 {
+    background-color: #fffecd;
+    font-weight: bold;
+  }
+  
+  .paper-note p {
+    transition: all 0.5s ease;
+    background-color: #fffecd;
+    font-family: cursive;
+  }
+  
+  .paper-note:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1.050);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+  }
+
+  label {
+    color: white;
+  }
+
+  .error {
+    color: red;
+  }
+  .error_border {
+    border: 2px solid red;
+}
+
+
+
+@media screen and (max-width: 1397px) {
+    .title-page h1{
+        text-align: center;
+    }
+    .container-entrys {
+        justify-content: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 990px) {
+    .title-page h1{
+        text-align: center;
+    }
+    .container-entrys {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .title-page h1{
+        text-align: center;
+    }
+    .container-entrys {
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+    .input-title {
+        max-width: 300px;
+    }
+    .input-description {
+        max-width: 300px;
+    }
+
+    .paper-note {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .btn-div button{
+        width: 170px;
+    }
+    .div-notes {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
